@@ -12,3 +12,9 @@
       src: https://s3.amazonaws.com/hertertcdn/agents/machineagent-bundle-64bit-linux-4.4.3.1214.zip
       dest: /opt/appdynamics/machineagent
       remote_src: yes
+
+  - name: Set sim-enabled
+    xml:
+      path: /opt/appdynamics/machineagent/conf/controller-info.xml
+      xpath: /controller-info/sim-enabled
+      value: true
