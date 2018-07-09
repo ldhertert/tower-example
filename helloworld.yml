@@ -4,5 +4,7 @@
  
   tasks:
  
-  - name: Hello World!
-    shell: echo "Hi! Tower is working."
+  - name: Download java agent
+    get_url:
+      url: https://packages.appdynamics.com/java/4.5.1.23645/AppServerAgent-4.5.1.23645.zip
+      dest: /tmp/AppServerAgent-4.5.1.23645.zip
